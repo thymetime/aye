@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Avert Your Eyes</title>
+  <link rel="icon" type="image" href="Asset 3.png">
+  <style>
+
+    @font-face {
+      font-family: "Quicksand-Bold";
+      src: url("/users/olyadkitila/library/Fonts/Quicksand-VariableFont_wght.ttf")
+    }
+      
+    @font-face {
+        font-family: "Cocogoose";
+        src: url("/users/olyadkitila/library/Fonts/cocogoose/Cocogoose Pro Semilight-trial.ttf");
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      list-style-type: none;
+      position: relative;
+      outline: none;
+      color: inherit;
+    }
+
+
+    html {
+      box-sizing: border-box;
+      font-size: 10px;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: #111;
+      font-size: 1.8rem;
+    }
+
+    a:hover {
+      cursor: pointer;
+    }
+
+    .navbar {
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      margin: 0 auto;
+      padding: 20px 50px;
+      /*box-shadow: 0px 24px 33px -40px rgba(0,0,0,0.75);*/
+      color: white;
+      background-color: transparent;
+      animation: reveal 3s ease-out forwards;
+    }
+
+    @keyframes reveal {
+      
+      0% {
+        opacity: 0
+      }
+
+      100% {
+        opacity: 1
+      }
+    }
+
+    .navlinks {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+    }
+
+    .navlinks a {
+      padding: 10px;
+    }
+
+    .hero {
+      display: block;
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .hero:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url('AYE_signs.jpg');
+      background-repeat: none;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .enter-site {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: white;
+      animation: reveal .5s ease-out forwards;
+    }
+
+    .brand__container {
+      padding: 0 2rem;
+      margin: 0 auto;
+      text-align: center;
+      color: white;
+      font-family: 'Cocogoose';
+    }
+
+    .brand__container * {
+      margin: 50px auto 0 auto;
+    }
+
+    .rows h1 {
+    }
+
+    .rows img {
+      width: 100%;
+      max-width: 430px;
+      display: block;
+      transition: .5s;
+      background-color: red;
+    }
+
+    .rows img:hover {
+      filter: grayscale(1);
+      transition: .5s;
+    }
+    
+
+    @media screen and (min-width: 860px) {
+
+      .navbar {
+        display: flex;
+      }
+
+      .rows {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+        padding: 2rem 0;
+      }
+
+      .rows:nth-child(even) img {
+        order: 2
+      }
+
+      .rows h1 {
+        margin: 0 auto;
+      }
+
+      .rows img {
+        width: calc(100% / 3 * 2);
+        max-width: none; 
+        margin: 0;
+      }
+    } 
+
+
+    </style>
+</head>
+<body>
+
+  <!--=======================-->
+  <!--========= NAV =========-->
+  <!--=======================-->
+
+  <nav class="navbar">
+    <h3 class="logo"><a href="Quid-pro-quo.html">Avert Your Eyes</a></h3>
+
+    <ul class="navlinks">
+      <li><a href="">Menu</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!--========================-->
+  <!--========= HERO =========-->
+  <!--========================-->
+
+  <header class="hero"><a href="#brand" class="enter-site">enter</a></header>
+
+  <!--========================-->
+  <!--========= MAIN =========-->
+  <!--========================-->
+
+  <div class="main">
+
+    <!--========================-->
+    <!--===== BRAND-MARQUEE ====-->
+    <!--========================-->
+
+    <section id="brand" class="brand">
+      <div class="brand__container">
+          <div class="rows">
+            <img src="amy_1.png">
+            <h1>AVERT</h1>
+          </div>
+          <div class="rows">
+            <img src="amy_2.png" class="image image1">
+            <h1>YOUR</h1>
+          </div>
+          <div class="rows">
+            <img src="amy_3.png">
+            <h1>EYES</h1>
+          </div>
+      </div>
+    </section>
+    <section class="clothes">
+
+    </section>
+  </div> 
+ 
+</body>
+</html>
