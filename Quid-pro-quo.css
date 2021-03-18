@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Quicksand-Bold";
-    src: url("/resources/fonts/Quicksand.ttf");
+    src: url("./resources/fonts/Quicksand.ttf");
   }
     
   @font-face {
       font-family: "Cocogoose";
-      src: url("/resources/fonts/Cocogoose.ttf");
+      src: url("./resources/fonts/Cocogoose.ttf");
   }
 
   *,
