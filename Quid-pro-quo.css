@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Quicksand-Bold";
-    src: url("/users/olyadkitila/library/Fonts/Quicksand-VariableFont_wght.ttf")
+    src: url("/resources/fonts/Quicksand.ttf");
   }
     
   @font-face {
       font-family: "Cocogoose";
-      src: url("/users/olyadkitila/library/Fonts/cocogoose/Cocogoose Pro Semilight-trial.ttf");
+      src: url("/resources/fonts/Cocogoose.ttf");
   }
 
   *,
