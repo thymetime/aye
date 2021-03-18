@@ -1,2 +1,2 @@
-# aye
-Avert Your Eyes 
+# AvertYourEyes
+Website for Fashion & Design Project, Avert Your Eyes.
