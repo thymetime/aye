@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Quicksand-Bold";
-    src: url("/resources/fonts/Quicksand.ttf");
+    src: url("./Resources/Fonts/Quicksand.ttf");
   }
     
   @font-face {
       font-family: "Cocogoose";
-      src: url("/resources/fonts/Cocogoose.ttf");
+      src: url("./Resources/Fonts/Cocogoose.ttf");
   }
 
   *,
@@ -92,7 +92,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url('AYE_signs.jpg');
+    background-image: url('./Resources/Images/AYE_LandingImage.jpg');
     background-repeat: none;
     background-position: center;
     background-size: cover;
