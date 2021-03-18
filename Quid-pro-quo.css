@@ -118,7 +118,7 @@
     margin: auto;
     text-align: center;
     color: white;
-    font-family: 'Cocogoose';
+    font-family: 'Cocogoose', sans-serif;
   }
 
   .brand__container * {
