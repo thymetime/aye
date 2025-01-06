@@ -116,9 +116,9 @@ a:hover {
 }
 
 .brand__container {
-  position: relative;
+  /* position: relative;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(0, -50%); */
   margin: 0 auto;
   text-align: center;
   color: white;
@@ -134,9 +134,12 @@ a:hover {
 
 .rows img {
   width: 80%;
-  max-width: 430px;
+  max-width: 500px;
+  max-height: 350px;
+  object-fit: cover;
   display: block;
   transition: .5s;
+
 }
 
 .rows img:hover {
