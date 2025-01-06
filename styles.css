@@ -1,174 +1,178 @@
+:root {
+  --black-main: #111;
+}
+
 @font-face {
-    font-family: "Quicksand-Bold";
-    src: url("./Resources/Fonts/Quicksand.ttf");
-  }
-    
-  @font-face {
-      font-family: "Cocogoose";
-      src: url("./Resources/Fonts/Cocogoose.ttf");
+  font-family: "Quicksand-Bold";
+  src: url("./Resources/Fonts/Quicksand.ttf");
+}
+  
+@font-face {
+    font-family: "Cocogoose";
+    src: url("./Resources/Fonts/Cocogoose.ttf");
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  position: relative;
+  outline: none;
+  color: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--black-main);
+  font-size: 1.8rem;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  /*box-shadow: 0px 24px 33px -40px rgba(0,0,0,0.75);*/
+  color: white;
+  background-color: transparent;
+  animation: reveal 3s ease-out forwards;
+  font-family: 'Cocogoose', sans-serif;
+}
+
+@keyframes reveal {
+  
+  0% {
+    opacity: 0
   }
 
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
-    position: relative;
-    outline: none;
-    color: inherit;
+  100% {
+    opacity: 1
   }
+}
+
+.navlinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.navlinks a {
+  padding: 10px;
+}
+
+.hero {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('./Resources/Images/AYE_LandingImage.jpg');
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.enter-site {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  animation: reveal .5s ease-out forwards;
+}
+
+.brand {
+  height: 100vh;
+}
+
+.brand__container {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: 'Cocogoose', sans-serif;
+}
+
+.brand__container * {
+  margin: 50px auto 0 auto;
+}
+
+.rows h1 {
+}
+
+.rows img {
+  width: 80%;
+  max-width: 430px;
+  display: block;
+  transition: .5s;
+}
+
+.rows img:hover {
+  filter: grayscale(1);
+  transition: .5s;
+}
 
 
-  html {
-    box-sizing: border-box;
-    font-size: 10px;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
-
-  body {
-    background-color: #111;
-    font-size: 1.8rem;
-  }
-
-  a:hover {
-    cursor: pointer;
-  }
+@media screen and (min-width: 860px) {
 
   .navbar {
-    display: none;
+    display: flex;
+  }
+
+  .rows {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
+    width: 50%;
+    min-width: 650px;
     margin: 0 auto;
-    padding: 20px 50px;
-    /*box-shadow: 0px 24px 33px -40px rgba(0,0,0,0.75);*/
-    color: white;
-    background-color: transparent;
-    animation: reveal 3s ease-out forwards;
-    font-family: 'Cocogoose', sans-serif;
+    padding: 2rem 0;
   }
 
-  @keyframes reveal {
-    
-    0% {
-      opacity: 0
-    }
-
-    100% {
-      opacity: 1
-    }
-  }
-
-  .navlinks {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-  }
-
-  .navlinks a {
-    padding: 10px;
-  }
-
-  .hero {
-    display: block;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .hero:before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-image: url('./Resources/Images/AYE_LandingImage.jpg');
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .enter-site {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    animation: reveal .5s ease-out forwards;
-  }
-
-  .brand {
-    height: 100vh;
-  }
-
-  .brand__container {
-    position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-    font-family: 'Cocogoose', sans-serif;
-  }
-
-  .brand__container * {
-    margin: 50px auto 0 auto;
+  .rows:nth-child(even) img {
+    order: 2
   }
 
   .rows h1 {
+    margin: 0 auto;
   }
 
   .rows img {
-    width: 100%;
-    max-width: 430px;
-    display: block;
-    transition: .5s;
+    width: calc(100% / 3 * 2);
+    max-width: none; 
+    margin: 0;
   }
-
-  .rows img:hover {
-    filter: grayscale(1);
-    transition: .5s;
-  }
-  
-
-  @media screen and (min-width: 860px) {
-
-    .navbar {
-      display: flex;
-    }
-
-    .rows {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 50%;
-      min-width: 650px;
-      margin: 0 auto;
-      padding: 2rem 0;
-    }
-
-    .rows:nth-child(even) img {
-      order: 2
-    }
-
-    .rows h1 {
-      margin: 0 auto;
-    }
-
-    .rows img {
-      width: calc(100% / 3 * 2);
-      max-width: none; 
-      margin: 0;
-    }
-  } 
+} 
 
