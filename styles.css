@@ -176,6 +176,10 @@ a:hover {
     width: calc(100% / 3 * 2);
     max-width: none; 
     margin: 0;
+    max-height: 350px;
+    object-fit: cover;
+    display: block;
+    transition: .5s;
   }
 } 
 
