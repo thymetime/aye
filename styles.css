@@ -132,7 +132,7 @@ a:hover {
 .rows h1 {
 }
 
-.rows img {
+.image {
   width: 80%;
   max-width: 500px;
   max-height: 350px;
@@ -142,7 +142,7 @@ a:hover {
 
 }
 
-.rows img:hover {
+.image:hover {
   filter: grayscale(1);
   transition: .5s;
 }
@@ -172,7 +172,7 @@ a:hover {
     margin: 0 auto;
   }
 
-  .rows img {
+  .image {
     width: calc(100% / 3 * 2);
     max-width: none; 
     margin: 0;
@@ -180,6 +180,10 @@ a:hover {
     object-fit: cover;
     display: block;
     transition: .5s;
+  }
+
+  .image2 {
+    object-position: bottom;
   }
 } 
 
